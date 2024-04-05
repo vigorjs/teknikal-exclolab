@@ -1,11 +1,42 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
+## Postman Collection
+https://www.postman.com/research-physicist-10707010/workspace/sanctum-laravel11/collection/29862535-01098974-fa41-4c8e-98d7-632f245b52d8?action=share&creator=29862535
+
+## INSTALLATION
+1. Lakukan cloning project.
+    ```sh
+    git clone https://github.com/vigorjs/teknikal-exclolab.git
+    ```
+2. Spesifikasi project ini membutuhkan **php** versi **8.2**, **composer** versi **2.5** dan **Laravel** versi **11**.
+3. Install composer di project.
+    ```sh
+    composer install
+    ```
+4. Duplikasi file .env.example menjadi .env
+    ```sh
+    cp .env.example .env
+    ```
+7. Buat application key.
+    ```sh
+    php artisan key:generate
+    ```
+8. Migrate database.
+    ```sh
+    php artisan migrate
+    ```
+9. run.
+    ```sh
+    php artisan serve
+    ```
+
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
+
 
 ## About Laravel
 
