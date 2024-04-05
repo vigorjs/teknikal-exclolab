@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Requests\Auth;
 
+use App\Models\User;
 use Illuminate\Foundation\Http\FormRequest;
 
 class RegisterRequest extends FormRequest
@@ -22,9 +23,10 @@ class RegisterRequest extends FormRequest
     public function rules(): array
     {
         return [
-                'name' => 'required',
-                'email' => 'required|email',
-                'password' => 'required',
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:'.User::class,
+            'password' => 'required',
+            'password_validation' => 'required',
         ];
     }
 }
